@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Project</title>
+    <link rel="" href="#" />
+    <!--====css====-->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+
+     
+
+    <!-- Navebar -->
+    <nav class="navbar expand ig">
+        <h1 class="logo">MAHABALIPURAM</h1>
+        <ul class="nav-links" id="item">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/weather.html">Weather</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/photos.html">Photos</a></li>
+            <li class="ctn"><a href="/main.html">Places</a></li>
+        </ul>
+        <img src="./img/menu-btn.jpg" alt="" class="menu-btn">
+     </nav>
+
+     <section class="bio3">
+        <div class="main">
+            <img src="/maha-info/photo/info3.jpg">
+            <div class="bio3-text">
+                <h1>Mahabalipuram Beach</h1>
+                <div class="line"></div>
+                <p>Also called Mamallapuram by the locals, the famous Mahabalipuram Beach is located on the shores of the Bay of Bengal and is one of the best tourist places in Mahabalipuram. It features plenty of prominent rock-cut sculptures that are sure to melt your heart! There are stunning caves, massive rathas, chariots, and temples on this beach that attract hundreds of pilgrims, architecture fans, and history geeks to these shores every month, and leaves them beguiled! Other than exploring these unique Mahabalipuram temples and caves, this beach is a great place to relax and spend quality time with your loved ones.<br><br><br>
+
+                    Location: Kanchipuram District, Tamil Nadu<br>
+                    Timings: Open 24X7<br>
+                    Entrance fee: Nil</p>
+                        
+            </div>
+        </div>
+
+        <div class="ctn">
+            <a href="/maha-info/info2.html">Back</a>
+        </div>
+        <div class="ctn">
+            <a href="/maha-info/info4.html">Next</a>
+        </div>
+    </section>
+
+    <script>
+        const menubtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menubtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+        navlinks.addEventListener('click',()=>{
+            navlinks.classList.remove('mobile-menu')
+        })
+        
+    </script>
+    
+</body>
+</html>

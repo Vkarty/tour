@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Project</title>
+    <link rel="" href="#" />
+    <!--====css====-->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+
+     
+
+    <!-- Navebar -->
+    <nav class="navbar expand ig">
+        <h1 class="logo">MAHABALIPURAM</h1>
+        <ul class="nav-links" id="item">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/weather.html">Weather</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/photos.html">Photos</a></li>
+            <li class="ctn"><a href="/main.html">Places</a></li>
+        </ul>
+        <img src="./img/menu-btn.jpg" alt="" class="menu-btn">
+     </nav>
+
+     <section class="bio4">
+        <div class="main">
+            <img src="/maha-info/photo/info4.jpg">
+            <div class="bio4-text">
+                <h1>Alamparai Fort</h1>
+                <div class="line"></div>
+                <p>Not many are aware of the existence of the Alamparai Fort in Mahabalipuram, since it’s not as famous as other places to see in Mahabalipuram. However, this captivating fort is a very important historical site in this city. It’s essentially a long forgotten trading post that has a striking and rather imposing architecture, and the views from its top are sure to take your breath away! Though it’s not in perfect condition anymore, a walk across this dilapidated yet enthralling fort will make you feel like stepping back in time. Owing to the numerous shrubs, creepers, bushes, and trees here, it is a remarkable example of ancient architecture that has let nature take over and blended perfectly with the surrounding foliage.<br><br><br>
+
+                    Location: Edaikazhinadu, Tamil Nadu 603304<br>
+                    Timings: 8 AM – 6 PM<br>
+                    Entrance fee: Nil</p>
+                        
+            </div>
+        </div>
+
+        <div class="ctn">
+            <a href="/maha-info/info3.html">Back</a>
+        </div>
+        <div class="ctn">
+            <a href="/maha-info/info5.html">Next</a>
+        </div>
+    </section>
+
+    <script>
+        const menubtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menubtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+        navlinks.addEventListener('click',()=>{
+            navlinks.classList.remove('mobile-menu')
+        })
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Project</title>
+    <link rel="" href="#" />
+    <!--====css====-->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+
+
+     
+
+    <!-- Navebar -->
+    <nav class="navbar expand ig">
+        <h1 class="logo">MAHABALIPURAM</h1>
+        <ul class="nav-links" id="item">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/weather.html">Weather</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/photos.html">Photos</a></li>
+            <li class="ctn"><a href="/main.html">Places</a></li>
+        </ul>
+        <img src="./img/menu-btn.jpg" alt="" class="menu-btn">
+     </nav>
+
+     <section class="bio1">
+        <div class="main">
+            <img src="/maha-info/photo/info1.jpg">
+            <div class="bio1-text">
+                <h1>Five Rathas</h1>
+                <div class="line"></div>
+                <p>Five Rathas is one of those historical places that one must certainly go to during their visit to Mahabalipuram. The five Rathas link back to the era of the great Indian epic Mahabharata and the five Pandavas and visiting them is one of the best things to do in Mahabalipuram. If one wants to get a true glimpse of Dravidian architecture, then you must take a tour around these Rathas or chariots. The sight of the huge elephant structures can give you a beautiful feel of a bygone era. For all those architecture lovers, this is one must-go-to place.<br><br><br>
+
+                    Timings: 6 am to 6 pm<br>
+                    Entrance fee for Indians: 10 INR/-<br>
+                    Foreigner entry fee: 250 INR/-<br>
+                    Location: Historical landmark in Mahabalipuram, Tamil Nadu
+                    
+                    </p>
+                        
+            </div>
+        </div>
+        
+        <div class="ctn">
+            <a href="/maha-info/info2.html">Next</a>
+        </div>
+
+    </section>
+
+    <script>
+        const menubtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menubtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+        navlinks.addEventListener('click',()=>{
+            navlinks.classList.remove('mobile-menu')
+        })
+        
+    </script>
+    
+</body>
+</html>

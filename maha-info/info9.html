@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Project</title>
+    <link rel="" href="#" />
+    <!--====css====-->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+
+     
+
+    <!-- Navebar -->
+    <nav class="navbar expand ig">
+        <h1 class="logo">MAHABALIPURAM</h1>
+        <ul class="nav-links" id="item">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/weather.html">Weather</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/photos.html">Photos</a></li>
+            <li class="ctn"><a href="/main.html">Places</a></li>
+        </ul>
+        <img src="./img/menu-btn.jpg" alt="" class="menu-btn">
+     </nav>
+
+     <section class="bio9">
+        <div class="main">
+            <img src="/maha-info/photo/info9.jpg">
+            <div class="bio9-text">
+                <h1>Trimurti Cave</h1>
+                <div class="line"></div>
+                <p>As the name suggests, Trimurti Cave blankets the rock cut formation of the three Gods of the Hindu mythology. These Gods were the creater aka Brahma, god of preservation aka Vishnu, and the god of destruction aka Shiva. The other cave temples that cover the floors of Mahabalipuram have pillared mandaps but this one opens directly to the shrines of three Gods. One of the interesting places to see in Mahabalipuram, Tirumati Cave is also home to the shrine of Goddess Durga on her lion as she slays the demon Mahishasura.<br><br><br>
+
+                    Location: Mahabalipuram, Tamil Nadu<br>
+                    Timings: NA<br>
+                    Entrance fee: Nil</p>
+                        
+            </div>
+        </div>
+
+        <div class="ctn">
+            <a href="/maha-info/info8.html">Back</a>
+        </div>
+        <div class="ctn">
+            <a href="/maha-info/info10.html">Next</a>
+        </div>
+    </section>
+
+    <script>
+        const menubtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menubtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+        navlinks.addEventListener('click',()=>{
+            navlinks.classList.remove('mobile-menu')
+        })
+        
+    </script>
+    
+</body>
+</html>

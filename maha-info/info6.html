@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Project</title>
+    <link rel="" href="#" />
+    <!--====css====-->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+
+     
+
+    <!-- Navebar -->
+    <nav class="navbar expand ig">
+        <h1 class="logo">MAHABALIPURAM</h1>
+        <ul class="nav-links" id="item">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/weather.html">Weather</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/photos.html">Photos</a></li>
+            <li class="ctn"><a href="/main.html">Places</a></li>
+        </ul>
+        <img src="./img/menu-btn.jpg" alt="" class="menu-btn">
+     </nav>
+
+     <section class="bio6">
+        <div class="main">
+            <img src="/maha-info/photo/info6.jpg">
+            <div class="bio6-text">
+                <h1>Mahishasura Mardini</h1>
+                <div class="line"></div>
+                <p>Mahishasura Mardini Cave Temple is an epitome of 7th century Indian architecture. This monument is also known as Yampuri and is a rock-cut structure that leaves one in awe because of the aesthetics. One of the beautiful places to visit in Mahabalipuram, Mahishasura Mardini Cave Temple adorns carvings of the Hindu mythology. It showcases the Lord Vishnu on his seven hooded serpent and Lord Durga sitting on her lion as she slays the demon Mahishasur. A magnet for Hindu devotees and pilgrims, this structure also have scenes of Puranas depicted on the cave walls. This temple is sitting atop a hill and offers impeccable views of the surroundings.<br><br><br>
+
+                    Location: Mada Koil St, Mahabalipuram, Tamil  Nadu<br>
+                    Timings: NA <br>
+                    Entrance fee: Nil</p>
+                        
+            </div>
+        </div>
+
+        <div class="ctn">
+            <a href="/maha-info/info5.html">Back</a>
+        </div>
+        <div class="ctn">
+            <a href="/maha-info/info7.html">Next</a>
+        </div>
+    </section>
+
+    <script>
+        const menubtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menubtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+        navlinks.addEventListener('click',()=>{
+            navlinks.classList.remove('mobile-menu')
+        })
+        
+    </script>
+    
+</body>
+</html>

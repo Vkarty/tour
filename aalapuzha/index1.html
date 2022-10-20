@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Project</title>
+    <link rel="" href="#" />
+    <!--====css====-->
+    <link rel="stylesheet" href="./style1.css">
+    
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+
+     
+
+    <!-- Navebar -->
+    <nav class="navbar expand ig">
+        <h1 class="logo">ALAPPUZHA</h1>
+        <ul class="nav-links" id="item">
+            <li><a href="#home">Home</a></li>
+            <li><a href="./weather1.html">Weather</a></li>
+            <li><a href="./about1.html">About</a></li>
+            <li><a href="./photos1.html">Photos</a></li>
+            <li class="ctn"><a href="/main.html">Places</a></li>
+        </ul>
+        <img src="./img/menu-btn.jpg" alt="" class="menu-btn">
+     </nav>  
+    <header>
+        <section id="home" class="home">
+        <div class="header-content">
+            <h2>God's Own Land</h2>
+            <div class="line"></div>
+            <h1>ALAPPUZHA</h1>
+            
+            <button id="speakBtn">Speak</button>
+            <script src="./index1.js"></script>
+           
+        </div>
+        </section>
+    </header>
+
+    <!-- Events -->
+    <section id="events" class="events">
+
+
+        <div class="title">
+            <h1>Important places to visit</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="/img/ala-imp1.jpeg" alt="">
+                <h4>Some Text</h4>
+                <p>IDEK</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="/img/ala-imp2.jpeg" alt="">
+                <h4>Some Text</h4>
+                <p>IDK</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="bio" class="bio">
+      <div class="bio-content">
+        <h1>BIOGRAPHY</h1>
+        <div class="line"></div>
+        <p>Will be updated soon</p>
+        <a href="#" class="ctn">Learn More</a>
+      </div>  
+    </section>
+
+    <section id="photos" class="photos">
+        <div class="row">
+            <div class="col content-col">
+                <h1>PICTURES</h1>
+                <div class="line"></div>
+                <P>Some of the pictures</P>
+                <a href="#" class="ctn">See More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="/img/alappu/ala-imp1.jpeg" alt="">
+                    <img src="/img/alappu/ala-imp2.jpeg" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="contact" class="footer-content">
+            <h3>Tourism</h3>
+            <p>Alappuzha | India</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyrights © 2022 KVS, Developed & Managed By <a href="https://www.instagram.com/urstruly.karthi/">Karty</a></p>
+        </div>
+    </footer>
+
+    
+    <script>
+        const menubtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menubtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+        navlinks.addEventListener('click',()=>{
+            navlinks.classList.remove('mobile-menu')
+        })
+
+
+
+        const btn = document.getElementById('btn');
+
+        
+    </script>
+</body>
+</html>

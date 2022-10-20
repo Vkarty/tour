@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Project</title>
+    <link rel="" href="#" />
+    <!--====css====-->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+
+     
+
+    <!-- Navebar -->
+    <nav class="navbar expand ig">
+        <h1 class="logo">MAHABALIPURAM</h1>
+        <ul class="nav-links" id="item">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/weather.html">Weather</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/photos.html">Photos</a></li>
+            <li class="ctn"><a href="/main.html">Places</a></li>
+        </ul>
+        <img src="./img/menu-btn.jpg" alt="" class="menu-btn">
+     </nav>
+
+     <section class="bio10">
+        <div class="main">
+            <img src="/maha-info/photo/info10.jpg">
+            <div class="bio10-text">
+                <h1>Mamallapuram Lighthouse</h1>
+                <div class="line"></div>
+                <p>The lighthouse is one of the must visit places to see in Mahabalipuram. This particular beauty was constructed back in the 20th century. But the lighthouse was only open to the public in the year 2011. The structure of the lighthouse is built using the natural stones. The best part about this lighthouse is that the travelers are given permission to climb up the stoney stairs. Once atop, the panoramic views of the surroundings is a real treat for both eyes and soul of spectators. It is truly an experience that is worth every capture!<br><br><br>
+
+                    Location: Mada Koil St, Mahabalipuram, Tamil Nadu<br>
+                    Timings: 9:30 to 5 pm<br>
+                    Entrance fee: INR 100</p>
+                        
+            </div>
+        </div>
+
+        <div class="ctn">
+            <a href="/maha-info/info9.html">Back</a>
+        </div>
+        
+    </section>
+
+    <script>
+        const menubtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menubtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+        navlinks.addEventListener('click',()=>{
+            navlinks.classList.remove('mobile-menu')
+        })
+        
+    </script>
+    
+</body>
+</html>
